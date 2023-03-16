@@ -1,0 +1,110 @@
+Tamagotchi en console
+
+
+Contexte : Nous voulons créer une application mélangeant un Tamagotchi et un mini jeu Pokemon
+
+La partie 1 sera la gestion du Tamagotchi : en interface console et en tour par tour, vous aurez la gestion d'une "créature". Des actions permettront d'en prendre soin, de gérer ses besoins.
+La partie 2 sera la section Pokemon : vous serez amené à confronter votre créature à d'autres. Ces autres seront de deux types : générés arbitrairement, et provenant d'un autre joueur.
+
+
+Vous ferez un menu en console afin de naviguer dans l'application.
+
+
+
+Part 1 Faire grandir son Tamagotchi
+
+Le Tamagotchi sera défini par :
+Nom, Energy, Force, Joie, Faim, Fatigue, Propreté - 0 à 10, nbDeVictoire
+MalusForce(debut à 0)
+
+Nous aurons aussi un compteur de tour.
+
+A chaque tour, il y aura quatre types d'action : choix utilisateur, action de tour, action random, action de contrainte.
+
+Choix utilisateur (1 au choix) - nécessite une energy>0 :
+Nourir(faim->0, MalusForce--)
+Sortir(joie->10, fatigue++)
+Laver(propreté->10)
+Carresser(energy = force + joie - faim - fatigue, fatigue = 0)
+
+
+Actions de tour :
+faim++
+fatigue++
+propreté--
+nbtour++
+
+
+A chaque tour, une action automatique random va avoir lieu
+Faim++ ou fatigue++ ou propriété--
+
+
+Action de contraintes:
+force = nbTour/10 - MalusForce 
+
+si faim>7 -> joie--, fatigue++, energy--
+si fatigue>7 -> MalusForce++, energy--
+si propreté<3 -> joie--, energy--, force--
+si joie<3 -> fatigue++, ernergy--, force--
+
+
+Il faut respecter l'ordre des actions.
+
+
+A chaque tour, on affiche dans la console le numéro du tour et les caractéristiques du Tamagotchi
+
+
+De plus, on aura la possibilité d'enregistrer dans un fichier les caractéristiques de la créature.
+Nom du fichier : Tama.txt
+Le format de l'enregistrement sera :
+Nom:
+Energy:
+Force:
+Joie:
+Faim:
+Fatigue:
+Proprete:
+MalusForce:
+
+Ce format est important, le fichier sera lu derrière et il faut que les mots utilisés soit les même.
+
+
+
+
+Part 2 Affrontement mode Pokemon
+
+Cette section du jeu, vera s'affronter deux créatures.
+
+On aura une liste de Tama générées automatiquement -> Attributs d'un Tama random sont entre 5-10(Energy, Joie, Propreté), et 0-5(Faim, fatigue, malusForce)
+force = nbTour/10 - MalusForce 
+
+Lorsqu'un combat est lancé, un tama random est choisi au hasard, et le calcul sera :
+ForceTamaA + nombreRandomEntre1et10 contre ForceTamaB + nombreRandomEntre1et10
+Selon le résultat, on modifie nbDeVictoire
+
+Il sera possible aussi de faire un affrontement avec un Tama venant d'un fichier txt, qui faudra alors lire.
+
+
+L'UI doit être simple d'utilisation.
+Les normes de nommage et bonnes pratiques à respecter!
+Tout ce qui n'est pas imposé est laissé libre.
+
+
+
+Le projet est à faire par groupe de 2 ou 3 personnes.
+Il est à rendre au plus tard le 10 décembre 2022.
+Même si c'est un projet commun, chaque membre du groupe doit le mettre en ligne sur moodle.
+Vous pouvez le rendre sous la forme d'un zip, ou d'un lien vers un repo github(public).
+Le rendu contiendra un fichier readme.md, avec les noms des membres du groupe, leur mail. Ce fichier contiendra aussi une description de votre méthode de travail et de la répartition des taches (quelques lignes peuvent suffir). Si votre nom n'apparaît pas, votre projet sera noté non rendu.
+Je vous fourni aussi un fichier tableur afin que vous listiez les groupes.
+
+Les contraintes données dans le jeu ne sont pas forcément équilibrées (par exemple, les chiffres liées aux actions). Tant que les actions ont lieu, sentez-vous libre de leur contenu.
+
+Les critères de notation seront:
+Mise en place de la structure du projet.
+Fonctionnalités de la partie 1 (Menu, actions, sauvegarde).
+Fonctionnalités de la partie 2 (Affrontement, lecture de fichier).
+Respect des normes du langage (bonnes pratiques, règles de nommage...
+Readme
+
+Vous avez tous mon contact sur discord, n'hésitez pas à me poser des questions.
