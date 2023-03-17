@@ -1,7 +1,13 @@
 # Tamagucci
 
-
 tamagotchi game using java only.
+
+
+## how to run 
+
+run the main class
+
+## Preview
 
 
 
