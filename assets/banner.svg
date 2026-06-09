@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 260" width="1200" height="260" font-family="ui-monospace,'Courier New',monospace">
+  <defs><linearGradient id="kg" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#ff9ecd"/><stop offset="100%" stop-color="#7ef0c0"/></linearGradient>
+    <linearGradient id="bd" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#ff9ecd"/><stop offset="100%" stop-color="#7ef0c0"/></linearGradient>
+  </defs>
+  <rect width="1200" height="260" rx="16" fill="#181024"/>
+  <rect x="1.5" y="1.5" width="1197" height="257" rx="15" fill="none" stroke="url(#bd)" stroke-width="2"/>
+  <g>
+  <rect x="1040" y="70" width="110" height="110" rx="22" fill="#241b33"/>
+  <rect x="1040" y="70" width="110" height="110" rx="22" fill="none" stroke="#ff9ecd" stroke-width="3"/>
+  <circle cx="1075" cy="115" r="9" fill="#7ef0c0"/><circle cx="1115" cy="115" r="9" fill="#7ef0c0"/>
+  <path d="M1078 142 q17 16 34 0" stroke="#ff9ecd" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <circle cx="1063" cy="132" r="6" fill="#ff9ecd" opacity="0.6"/><circle cx="1127" cy="132" r="6" fill="#ff9ecd" opacity="0.6"/>
+  </g>
+  <text x="980" y="80" font-size="22" fill="#ff9ecd">&#10084;</text>
+  <text x="1165" y="150" font-size="20" fill="#ffe14d">&#10022;</text>
+  
+  <text x="82" y="140" font-size="58" font-weight="700" fill="url(#kg)" letter-spacing="1">TAMAGUCCI</text>
+  <text x="84" y="178" font-size="22" font-weight="600" fill="#ffd6ec">Virtual Pet Game</text>
+  <text x="84" y="208" font-size="15" fill="#7ef0c0">&#8227; Built in pure Java &#183; raise your creature</text>
+</svg>
