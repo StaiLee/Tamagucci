@@ -1,3 +1,13 @@
+<p align="center">
+  <img src="./assets/banner.svg" alt="Tamagucci" width="100%"/>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/github/languages/top/StaiLee/Tamagucci?style=for-the-badge&color=ff9ecd&logoColor=white" alt="badge"/>
+  <img src="https://img.shields.io/github/license/StaiLee/Tamagucci?style=for-the-badge&color=684A95&label=LICENSE" alt="badge"/>
+  <img src="https://img.shields.io/github/stars/StaiLee/Tamagucci?style=for-the-badge&logo=github&color=e3b341&label=STARS" alt="badge"/>
+</p>
+
 # Tamagucci
 
 tamagotchi game using java only.
